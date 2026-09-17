@@ -12,4 +12,6 @@ especially informative. Upcoming: Bayesian inference on the GLMM using PyMC.
 To recreate the environment which I used and run the analysis, use the `reproduce.sh` 
 script.
 
+Modelling toolkit up to now: `pymer4`, `scikit-learn`, `statsmodels`.
+
 Work in progress...
