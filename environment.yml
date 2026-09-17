@@ -37,6 +37,7 @@ dependencies:
   - seaborn
   - jupyterlab
   - ipykernel
+  - nbconvert
 
   - pip
   - pip:
