@@ -1,0 +1,44 @@
+name: claims-glmm
+channels:
+  - conda-forge
+  - nodefaults        # avoid the anaconda defaults channel entirely
+dependencies:
+  # --- Python ---
+  - python=3.11
+
+  # --- R runtime and packages (must come from conda so rpy2 links correctly) ---
+  - r-base=4.5
+  - r-lme4
+  - r-lmerTest
+  - r-emmeans
+  - r-tibble
+  - r-dplyr
+  - r-broom
+  - r-broom.mixed
+  - r-report        # verify availability: conda search -c conda-forge r-report
+                    # if absent, install via postinstall.R (see README)
+
+  # --- the Python <-> R bridge: MUST be conda-forge, never pip ---
+  - rpy2
+
+  # --- data / modelling ---
+  - pandas
+  - polars
+  - pyarrow
+  - numpy
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - patsy           # used directly for design-matrix diagnostics
+  - joblib          # imported by pymer4
+
+  # --- plotting / notebook ---
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - ipykernel
+
+  - pip
+  - pip:
+      - formulae
+      - pymer4==0.9.2
