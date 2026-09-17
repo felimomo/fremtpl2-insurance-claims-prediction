@@ -35,6 +35,8 @@ dependencies:
   # --- plotting / notebook ---
   - matplotlib
   - seaborn
+  - plotnine
+  - great_tables
   - jupyterlab
   - ipykernel
   - nbconvert
