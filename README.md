@@ -5,13 +5,16 @@ In this repository I fit statistical models to insurance claim data using the
 Specifically I focus on how the variables in the dataset can be used to predict
 insurance claim number and amount.
 
-Up to now: MLE for a GLM and a GLMM predicting number of claims. These two models
-give pretty similar results which hints at the random effect used not being
-especially informative. Upcoming: Bayesian inference on the GLMM using PyMC.
+Work in progress...
+
+## Analysis
+
+You can find a preliminary analysis looking at predictability using GLM and GLMM
+fits at [`analysis.ipynb`](https://github.com/felimomo/fremtpl2-insurance-claims-prediction/blob/main/analysis.ipynb).
+
+Toolkit used: `pymer4`, `scikit-learn`, `statsmodels`.
+
+## Reproducible environment
 
 To recreate the environment which I used and run the analysis, use the `reproduce.sh` 
 script.
-
-Modelling toolkit up to now: `pymer4`, `scikit-learn`, `statsmodels`.
-
-Work in progress...
